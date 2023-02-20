@@ -16,6 +16,7 @@ sequelize
     })
 const articleRouter = require('./routes/article');
 app.use('/' , articleRouter);
+app.use('/article', articleRouter);
 
 app.get("/", (req, res) => {
     res.json({ message: "welcome to sequel - ižžžžžžerrrrrr app."})
