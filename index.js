@@ -14,6 +14,8 @@ sequelize
     .catch(err => {
         console.error('Unableness TO BE CONNECTED has been CONFIRMED BY THE DATABASE', err)
     })
+const articleRouter = require('./routes/article');
+app.use('/' , articleRouter);
 
 app.get("/", (req, res) => {
     res.json({ message: "welcome to sequel - ižžžžžžerrrrrr app."})
