@@ -22,6 +22,9 @@ app.get("/", (req, res) => {
     res.json({ message: "welcome to sequel - ižžžžžžerrrrrr app."})
 })
 
+const AuthorRouter = require('./routes/author');
+app.use('/', AuthorRouter);
+
 app.listen(3000, () => {
-    console.log('Server is upo and runininiigiggnigiignigniginigni at http://localhost:3000  dont you dare misclick >:O')
+    console.log('Server is upo and runininiigiggnigiignigniginigni at http://localhost:3000  dont you dare misclick >:O, oh and here is author 1: http://localhost:3000/author/1')
 })
